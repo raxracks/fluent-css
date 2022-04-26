@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Segoe UI Variable";
+  src: url("./SegoeUIVariableStaticText.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Semibold";
+  src: url("./SegoeUIVariableStaticTextSemibold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  background: #212121;
+  color: white;
+  font-family: "Segoe UI Variable Semibold";
+}
+
+body.light {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #2d2d2d;
+  color: white;
+  border: 1px solid #353535;
+  padding: 8px 15px;
+  flex: 1;
+  margin: 4px;
+  font-family: "Segoe UI Variable";
+}
+
+button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0 0);
+}
+
+button.active {
+  background-color: #62c9ff;
+  color: black;
+  border: 1px solid #78bee2;
+}
+
+body.light button {
+  background-color: #fbfbfb;
+  color: black;
+  border: 1px solid #cccccc;
+}
+
+body.light button.active {
+  background-color: #005fb8;
+  color: white;
+  border: 1px solid rgb(95, 130, 163);
+}
+
+dialog {
+  height: fit-content;
+  width: 410px;
+  background: #202020;
+  min-height: 15%;
+  border: 1px solid #313236;
+  border-radius: 8px;
+  padding: 0px;
+  color: white;
+  box-shadow: 0px 0px 5px 0px #000000;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+body.light dialog {
+  background: #f3f3f3;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0px 0px 9px 0px #c9c9c9;
+}
+
+dialog.horizontal {
+  width: 480px;
+  min-height: 0%;
+}
+
+dialog .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3 {
+  font-family: "Segoe UI Variable Semibold";
+}
+
+dialog .flex .top {
+  height: 100%;
+  width: 100%;
+  background: #2b2b2b;
+  padding: 0px 26px;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+body.light dialog .flex .top {
+  background: #ffffff;
+  color: black;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+dialog .flex .top div {
+  text-align: left;
+  width: 92%;
+  padding: 0px 0px 8px;
+}
+
+dialog .flex .top div .description {
+  font-family: "Segoe UI Variable";
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+dialog .flex .bottom {
+  height: auto;
+  width: 100%;
+  margin: 3px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+}
+
+dialog.horizontal button {
+  height: fit-content;
+  width: 100%;
+  flex: 0;
+}
+
+dialog.horizontal .flex {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+dialog.horizontal .flex .top {
+  height: auto;
+  border-radius: 8px 0px 0px 8px;
+  border-bottom: 0;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+body.light dialog.horizontal .flex .top {
+  border-right: 1px solid #e5e5e5;
+}
+
+dialog.horizontal .flex .bottom {
+  width: 50%;
+  margin: 3px;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-third {
+  width: 75%;
+}
+
+.w-tthird {
+  width: 62.5%;
+}
+
+input:not([type="checkbox"]) {
+  background: #2c2c2c;
+  border: 1px solid #2c2c2c;
+  border-bottom: 2px solid #707070;
+  border-radius: 4px;
+  padding: 5px 14px 6px 14px;
+  color: white;
+  font-family: "Segoe UI Variable";
+  outline: 0;
+  height: 22px;
+  outline: 0;
+  margin: 5px;
+}
+
+body.light input:not([type="checkbox"]) {
+  background: #fbfbfb;
+  color: black;
+}
+
+input:not([type="checkbox"]):focus {
+  border: 1px solid #4e4e4e;
+  border-bottom: 2px solid #4cc2ff;
+  background: #1d1f21;
+}
+
+body.light input:not([type="checkbox"]) {
+  border: 1px solid #e6e6e6;
+  border-bottom: 2px solid #cdcdcd;
+}
+
+body.light input:not([type="checkbox"]):focus {
+  background: #f3f3f3;
+  border-bottom: 2px solid #0067c0;
+}
+
+label {
+  font-family: "Segoe UI Variable";
+}
+
+input[type="checkbox"] {
+  outline: 0;
+}

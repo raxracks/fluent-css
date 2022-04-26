@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fluent.css" />
+    <title>fluent</title>
+  </head>
+  <body>
+    <input placeholder="Find a setting" /><button>Search</button><br />
+    <button onclick="showNormal()">Normal Dialog</button
+    ><button onclick="showHorizontal()">Horizontal Dialog</button>
+
+    <dialog
+      id="normal"
+      data-title="Add Module"
+      data-description="First choose a name for your module, then fill in the repository field with the format: user/repo"
+    >
+      <input class="w-full" placeholder="Module Name" />
+      <input placeholder="GitHub Repository" />
+      <button class="active">Submit</button>
+      <button onclick="closeNormal()">Cancel</button>
+    </dialog>
+
+    <dialog
+      id="horizontal"
+      class="horizontal"
+      data-title="Add Module"
+      data-description="First choose a name for your module, then fill in the repository field with the format: user/repo"
+    >
+      <input placeholder="Module Name" />
+      <input placeholder="GitHub Repository" />
+      <button class="active">Submit</button>
+      <button onclick="closeHorizontal()">Cancel</button>
+    </dialog>
+
+    <br /><input
+      type="checkbox"
+      id="theme"
+      data-label="Dark theme"
+      checked
+      onchange="toggleTheme()"
+    />
+
+    <script src="fluent.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
